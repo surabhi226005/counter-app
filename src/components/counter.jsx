@@ -21,6 +21,8 @@ class Counter extends Component {
 
   handleIncrement = () => {
     console.log("Increment clicked!", this);
+
+    this.setState({ count: this.state.count + 1 });
     // event handlers don't have access to 'this'
   }
 
