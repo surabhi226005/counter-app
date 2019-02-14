@@ -12,7 +12,14 @@ class Counter extends Component {
     return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
   }
 
-  handleIncrement() {
+  // constructor() {
+  //   super();
+  //   console.log("constructor", this);
+  //   // 'this' available in constructor
+  //   this.handleIncrement = this.handleIncrement.bind(this);
+  // }
+
+  handleIncrement = () => {
     console.log("Increment clicked!", this);
     // event handlers don't have access to 'this'
   }
