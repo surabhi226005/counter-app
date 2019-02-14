@@ -13,7 +13,8 @@ class Counter extends Component {
   }
 
   handleIncrement() {
-    console.log("Increment clicked!");
+    console.log("Increment clicked!", this);
+    // event handlers don't have access to 'this'
   }
 
   render() {
