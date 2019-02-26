@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; // Shortcut --> imrc tab
 import NavBar from './components/navbar';
 import Counters from './components/counters';
 import './App.css';
 
+// Class Component
 class App extends Component {
   state = {
     counters: [
@@ -53,4 +54,5 @@ class App extends Component {
   }
 }
 
+// Shortcut --> cc tab
 export default App;
